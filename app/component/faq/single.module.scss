@@ -1,0 +1,261 @@
+@import '../../../styles/abstract/mixing';
+@import '../../../styles/base/variable';
+
+.faq_section{
+    max-width: 85%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        .faq_left{
+            max-width: 100%;
+            
+            .left_container{
+                position: relative;
+
+                .faq_left_grid{
+                    display: flex;
+                    flex-wrap: wrap;
+    
+                    .thumbnail{
+                        width: 50%;
+                        padding-right: calc(2rem*.5);
+                        padding-left: calc(2rem*.5);
+                        margin-top: 2rem;
+                        text-align: right;
+                        
+                        .left_image{
+                            height: auto;
+                            object-fit: cover;
+                            max-width: 100%;
+                        }
+            
+                    }
+                    .thumbnail:nth-child(1){
+                        .left_image{
+                            border-radius: 120px 120px 0 120px;
+                        }
+                    }
+                    .thumbnail:nth-child(2){
+                        text-align-last: left;
+                        margin-top: 6rem;
+                        z-index: 3;
+                        .left_image{
+                            border-radius: 60px 0 100px;
+                        }
+                    }
+        
+                    .thumbnail:nth-child(3){
+                        margin-top: -.01rem;
+                        .left_image{
+                            border-radius: 60px 0 100px;
+                        }
+                    }
+        
+                    .thumbnail:nth-child(4){
+                        margin-top: 1.4rem;
+                        margin-left: -3.3rem;
+                        .left_image{
+                            border-radius: 0 50px 120px 120px;
+                        }
+                    }
+                }
+    
+                .shape_absolute{
+                    position: absolute;
+                }
+        
+                .shape_1{
+                    top: 3.2rem;
+                    right: .6rem;
+                }
+        
+                .shape_2{
+                    top: -2rem;
+                    right: 14rem;
+                }
+        
+                .shape_3{
+                    bottom: -1rem;
+                    left: 1.9rem;
+                    z-index: 9;
+                }
+        
+                .shape_4{
+                    bottom: -2.9rem;
+                    left: -1rem;
+                    opacity: .1;
+                }
+            }
+        }
+        
+        .faq_right{
+            max-width: 100%;
+            text-align: left;
+            padding-left: 2rem;
+            position: relative;
+
+            small{
+                font-family: $font-heading;
+            }
+
+            h1{
+                font-size: 36px;
+                font-weight: 700;
+                font-family: $font-heading;
+                line-height: 50px;
+                color: #ffffffe3;
+                margin-top: 1rem;
+    
+                span{
+                    color: #ee4a69;
+                }
+            }
+
+            .shape_green{
+                position: absolute;
+                right: -5rem;
+                bottom: .6rem;
+                z-index: -1;
+                opacity: .4;
+            }
+    
+            .circle_red{
+                display: block;
+                height: 101px;
+                width: 101px;
+                border: 15px solid #ee4a69;
+                border-radius: 50%;
+                position: absolute;
+                right: -7rem;
+                bottom: 1.1rem;
+            }
+        }
+    }
+}
+
+
+@include small_phone{
+    .faq_section{
+        grid-template-columns: none !important;
+
+        .container{
+            .faq_left{
+                max-width: 100%;
+                height: auto;
+                position: relative;
+        
+                .faq_left_grid{
+    
+                    .thumbnail:nth-child(4){
+                        margin-top: 1.4rem;
+                        .left_image{
+                            border-radius: 0 50px 120px 120px;
+                        }
+                    }
+                }
+        
+                .shape_absolute{
+                    display: none;
+                }
+            }
+    
+            .faq_right{
+    
+                .shape_green{
+                    display: none;
+                }
+    
+                .circle_red{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@include tab{
+    .faq_section{
+        .container{
+            grid-template-columns: none;
+
+            .faq_left{
+                max-width: 100%;
+                height: auto;
+                position: relative;
+        
+                .faq_left_grid{
+    
+                    .thumbnail:nth-child(4){
+                        margin-top: 1.4rem;
+                        margin-left: 0 !important;
+                        text-align-last: left;
+                        .left_image{
+                            border-radius: 0 50px 120px 120px;
+                        }
+                    }
+                }
+        
+                .shape_absolute{
+                    display: none;
+                }
+            }
+    
+            .faq_right{
+                margin-top: 2rem;
+                padding-left: 0;
+    
+                .shape_green{
+                    display: none;
+                }
+    
+                .circle_red{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include festus_screen{
+    .faq_section{
+        max-width: 90%;
+
+        .container{
+            
+            .faq_left{
+                max-width: 100%;
+                height: auto;
+                position: relative;
+                
+                .faq_left_grid{
+    
+                    .thumbnail:nth-child(4){
+                        margin-top: 1.4rem;
+                        margin-left: -1rem;
+                        .left_image{
+                            border-radius: 0 50px 120px 120px;
+                        }
+                    }
+                }
+
+                .shape_absolute{
+                    display: none !important;
+                }
+            }
+    
+            .faq_right{
+    
+                .shape_green{
+                    display: none;
+                }
+    
+                .circle_red{
+                    display: none;
+                }
+            }
+        }
+    }
+}

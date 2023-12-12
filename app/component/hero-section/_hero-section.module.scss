@@ -1,0 +1,296 @@
+@import '../../../styles/abstract/mixing';
+@import '../../../styles/base/variable';
+
+.hero_section {
+    background: url("../../../Images/Vector.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 100vh;
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 14rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .hero_left{
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h1{
+            font-size: 60px;
+            font-weight: 600;
+            width: 80%;
+            line-height: 70px;
+            font-family: $font-heading;
+            span{
+                color: #ee4a62;
+            }
+        }
+        
+        p{
+            width: 91%;
+            font-size: 22px;
+            line-height: 1.73;
+        }
+        
+        .cta_btn{
+            background: hsl(170, 75%, 41%);
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 0 30px;
+            max-width: 40%;
+            height: 50px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            .arrow_cta{
+                font-size: 1em;
+            }
+        }
+    }
+    
+    .hero_right{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+        position: relative;
+        
+        .banner_girl{
+            max-width: 100%;
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+            object-fit: cover;
+        }
+        .banner_man{
+            max-width: 100%;
+            border-radius: 50px 0 90px 0;
+            height: auto;
+            margin-top: 7rem;
+            z-index: 2;
+        }
+
+        .banner_support{
+            background: #fff;
+            color: #999;
+            border-radius: 50px 10px 50px 10px;
+            padding: 25px 30px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 22rem;
+            left: 2rem;
+            z-index: 2;
+
+            div:nth-child(1){
+                background: #fdedef;
+                color: #ee4b63;
+                border-radius: 50%;
+                width: 3rem;
+                height: 3rem;
+                margin-right: .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            div:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-left: .5rem;
+
+                small{
+                    font-weight: 600;
+                    color: #848484;
+                }
+
+                p{
+                    color: #ee4a62;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .banner_13{
+            position: absolute;
+            left: 16.1rem;
+            top: -2rem;
+        }
+
+        .banner_greendot{
+            position: absolute;
+            top: 6.3rem;
+            right: -4.7rem;
+            z-index: 1;
+        }
+
+        .banner_09{
+            position: absolute;
+            bottom: 1.875rem;
+            right: -8rem;
+        }
+
+        .banner_03{
+            position: absolute;
+            bottom: 0;
+            left: -2rem;
+            z-index: 1;
+        }
+    }
+}
+
+@include small_phone{
+    .hero_section{
+
+        .hero_left{
+
+            .cta_btn{
+                max-width: 60%;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@include phone{
+    .hero_section{
+
+        .hero_left{
+
+            .cta_btn{
+                max-width: 70%;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+@include tab{
+    .hero_section{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding-top: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero_left{
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+        max-width: 100%;
+        
+        h1{
+            font-size: 34px !important;
+            line-height: 40.1px !important;
+            width: 95% !important;
+        }
+
+        p{
+            font-size: 14px !important;
+            line-height: 31.1px !important;
+        }
+    }
+
+    .hero_right{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        .banner_man{
+            margin-top: 0 !important;
+            height: auto !important;
+        }
+
+        .banner_support{
+            display: none !important;
+        }
+
+        .banner_13{
+            display: none;
+        }
+        .banner_greendot{
+            display: none;
+        }
+        .banner_09{
+            display: none;
+        }
+        .banner_03{
+            display: none;
+        }
+    }
+}
+
+
+@include festus_screen{
+    .hero_section{
+        justify-content: center;
+        height: 100vh;
+        padding-top: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero_left{
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+        max-width: 100% !important;
+        
+        h1{
+            font-size: 34px !important;
+            line-height: 40.1px !important;
+            width: 95% !important;
+        }
+
+        p{
+            font-size: 14px !important;
+            line-height: 31.1px !important;
+        }
+
+        // .cta_btn{
+
+        // }
+    }
+
+    .hero_right{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        .banner_man{
+            height: auto !important;
+        }
+
+        // .banner_support{
+        //     display: none !important;
+        // }
+
+        .banner_13{
+            display: none;
+        }
+        .banner_greendot{
+            display: none;
+        }
+        .banner_09{
+            display: none;
+        }
+        .banner_03{
+            display: none;
+        }
+    }
+}

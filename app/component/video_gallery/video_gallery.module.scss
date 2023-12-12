@@ -1,0 +1,136 @@
+@import '../../../styles/abstract/mixing';
+
+.video_gallery_section{
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    height: 69vh;
+
+    .image_container{
+        position: absolute;
+        top: -6rem;
+        // left: 5rem;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,.3);
+            border-radius: 0 80px 0 120px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            // z-index: 2;
+        }
+
+        .vid_galla{
+            border-radius: 0 80px 0 120px;
+            border: 0;
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .video_play_btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 0;
+            width: 80px;
+            height: 80px;
+            line-height: 82px;
+            transition: all 1s cubic-bezier(0,0,.2,1);
+            border-radius: 50%;
+            background: #ee4a62;
+            margin: 0 auto;
+            font-size: 24px;
+            color: #fff;
+
+            &::before, &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                bottom: 0;
+                left: 0;
+                transition: 0.3s;
+                border-radius: 50%;
+                border: 1px solid hsla(0,0%,100%,.3);
+                -webkit-animation: ripple 2s linear 1s infinite;
+                animation: ripple 2s linear 1s infinite;
+            }
+        }
+
+        .video_play_btn *{
+            margin-left: 5px;
+            margin-top: 20px;
+        }
+    }
+
+    .image_position1{
+        position: absolute;
+        top: -11.9rem;
+        right: 1.5rem;
+        z-index: 2;
+    }
+    .image_position2{
+        position: absolute;
+        top: -10rem;
+        right: -3.5rem;
+    }
+    .image_position3{
+        position: absolute;
+        bottom: 2.5rem;
+        left: -10rem;
+    }
+}
+
+@include phone{
+    .video_gallery_section{
+        max-width: 75% !important;
+
+        .image_position1{
+            opacity: 0;
+        }
+
+        .image_position2{
+            opacity: 0;
+        }
+
+        .image_position3{
+            opacity: 0;
+        }
+    }
+}
+@include tab{
+    .video_gallery_section{
+        max-width: 80%;
+        height: 40vh;
+
+        .image_position1{
+            opacity: 0;
+        }
+
+        .image_position2{
+            opacity: 0;
+        }
+
+        .image_position3{
+            opacity: 0;
+        }
+    }
+}
+@include festus_screen{
+    .video_gallery_section{
+        .image_position3{
+            opacity: 0;
+        }
+    }
+}

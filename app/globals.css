@@ -1,0 +1,21 @@
+@import url('https://fonts.cdnfonts.com/css/rubik');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #F5F2EB;
+  background: #111822;
+  overflow-x: hidden;
+  font-family: 'rubik', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  main{
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../../styles/abstract/mixing";
+@import "../../../styles/base/variable";
+
+.single__faq{
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+
+    &__content{
+        background: #1C242F;
+        cursor: pointer;
+        border-radius: 10px;
+        overflow: hidden;
+        
+        
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            background: #1ab69d;
+            padding: .3rem 1rem;
+        }
+        
+        &__headers{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            padding: .3rem 1rem;
+
+        }
+        h5{
+            font-family: $font-heading;
+            font-weight: 550;
+            color: #fff;
+            padding-block: 1rem;
+            font-size: 1rem;
+        }
+    
+        p{
+            color: #bababa;
+            opacity: .8;
+            line-height: 1.8;
+            font-size: 18px;
+            max-width: 75%;
+            padding: 1rem 2rem;
+        }
+
+        .dnone{
+            display: none;
+        }
+
+        .block{
+            display: block;
+        }
+    }
+}
+
+// Media Queries 
+@include phone {
+    .single__faq{
+        padding: 1rem 0;
+
+        &__content{
+
+            h5{
+                line-height: 1.5;
+                font-size: 13px;
+                padding-bottom: .5rem;
+            }
+            p{
+                max-width: 100%;
+                font-size: 1rem;
+            }
+        }
+    }
+}
