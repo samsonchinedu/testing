@@ -1,12 +1,10 @@
 @import '../../../styles/abstract/mixing';
-@import '../../../styles/base/variable';
 
 .counter_up{
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     margin-bottom: 6rem;
-    font-family: 'spartan', sans-serif;
 
     .container{
         display: grid;
@@ -29,7 +27,7 @@
                 font-size: 36px;
                 line-height: 50px;
                 margin-bottom: .5rem;
-                font-family: $font-heading;
+                font-family: 'Sora', sans-serif;
             }
 
             p{

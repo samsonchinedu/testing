@@ -1,5 +1,4 @@
 @import '../../../styles/abstract/mixing';
-@import '../../../styles/base/variable';
 
 .Catergories{
     text-align: center;
@@ -18,7 +17,7 @@
         line-height: 50px;
         font-weight: 600;
         margin-bottom: 1.5rem;
-        font-family: $font-heading;
+        font-family: 'Sora', sans-serif;
         span{
             color: #1AB69D;
         }
@@ -27,7 +26,6 @@
     .description{
         width: 60%;
         margin: 0 auto;
-        // background: #000;
 
         p{
             font-size: 19px;
@@ -66,7 +64,7 @@
             }
 
             .push{
-                font-family: $font-heading;
+                font-family: 'Sora', sans-serif;
                 font-size: 20px;
             }
 

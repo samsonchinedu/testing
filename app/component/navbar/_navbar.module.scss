@@ -1,4 +1,4 @@
-@import '../../../styles/base/variable';
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 @import '../../../styles/abstract/mixing';
 
 .sticky_navbar{
@@ -21,7 +21,7 @@
         margin-left: 2rem;
 
         .logo_link{
-            font-family: $font-heading;
+            font-family: 'Sora', sans-serif;
             cursor: pointer;
             font-size: 20px;
             
@@ -251,7 +251,7 @@
                 width: 100%;
 
                 .logo_link{
-                    font-family: $font-heading;
+                    font-family: 'Sora', sans-serif;
                     cursor: pointer;
                     font-size: 25px;
                     
