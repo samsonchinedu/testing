@@ -1,5 +1,4 @@
 @import "../../../styles/abstract/mixing";
-@import "../../../styles/base/variable";
 
 .single__faq{
     margin-bottom: 1rem;
@@ -30,7 +29,7 @@
 
         }
         h5{
-            font-family: $font-heading;
+            font-family: 'Sora', sans-serif;
             font-weight: 550;
             color: #fff;
             padding-block: 1rem;

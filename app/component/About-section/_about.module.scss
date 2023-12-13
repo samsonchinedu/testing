@@ -1,5 +1,4 @@
 @import '../../../styles/abstract/mixing';
-@import '../../../styles/base/variable';
 
 .about_section{
   max-width: 80%;
@@ -32,7 +31,7 @@
               letter-spacing: 2px;
               line-height: 26px;
               color: #bababa;
-              font-family: $font-heading;
+              font-family: 'Sora', sans-serif;
             }
     
             .right_learning{
@@ -41,7 +40,7 @@
                 line-height: 50px;
                 color: #fff;
                 word-break: break-word;
-                font-family: $font-heading;
+                font-family: 'Sora', sans-serif;
     
                 span{
                   color: #ee4a62;
@@ -189,7 +188,7 @@
               letter-spacing: 2px;
               line-height: 26px;
               color: #bababa;
-              font-family: $font-heading;
+              font-family: 'Sora', sans-serif;
             }
     
             .right_learning{
@@ -198,7 +197,7 @@
                 line-height: 50px;
                 color: #fff;
                 word-break: break-word;
-                font-family: $font-heading;
+                font-family: 'Sora', sans-serif;
     
                 span{
                   color: #ee4a62;
@@ -335,14 +334,52 @@
 
     .duplicated_up{
       margin-bottom: 4rem;
-      // margin-left: 30rem;
 
       .about_left{
         margin-left: 0 !important;
 
-        // .image_about{
-        //   min-width: 100% !important;
-        // }
+        .user_count{
+          background: #fff;
+          box-shadow: 0 40px 60px rgba(15,11,44,.15);
+          border-radius: 30px 10px 50px 10px;
+          padding: 22px 20px 18px 30px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          position: absolute;
+          bottom: -1px;
+          left: -1rem !important;
+          z-index: 2;
+  
+          
+  
+          &_icon{
+            color: #ee4a62;
+            background: #FDEDEF;
+            margin-right: 1rem;
+            font-size: 3rem;
+            padding: .6rem;
+            border-radius: 50%;
+          }
+  
+          div{
+  
+            h3{
+              font-size: 18px;
+              font-weight: 550;
+              line-height: 24px;
+              color: #ee4a62;
+              margin-bottom: .3rem;
+            }
+  
+            p{
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 26px;
+              color: hsla(0, 0%, 0%, 0.737);
+            }
+          }
+        }
       }
 
       .about_right{

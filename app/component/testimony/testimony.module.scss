@@ -1,9 +1,7 @@
 @import '../../../styles/abstract/mixing';
-@import '../../../styles/base/variable';
 
 .testimony_section{
     max-width: 80%;
-    font-family: 'poppins', sans-serif;
     margin-bottom: 4rem;
     margin-top: 8rem;
     margin-inline: auto;
@@ -34,7 +32,7 @@
                 h2{
                     font-size: 36px;
                     line-height: 50px;
-                    font-family: $font-heading;
+                    font-family: 'Sora', sans-serif;
                     margin-bottom: 1rem;
                     color: #fff;
                 }
@@ -57,7 +55,6 @@
                     width: 30%;
                     height: 50px;
                     font-size: 15px;
-                    font-family: 'spartan', sans-serif;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -151,7 +148,7 @@
                             line-height: 26.1px;
                             color: #fff;
                             font-weight: 500;
-                            font-family: 'spartan', sans-serif;
+                            font-family: 'Sora', sans-serif;
                             margin-top: .25rem;
                             margin-bottom: .25rem;
                         }

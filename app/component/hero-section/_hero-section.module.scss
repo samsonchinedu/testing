@@ -1,5 +1,4 @@
 @import '../../../styles/abstract/mixing';
-@import '../../../styles/base/variable';
 
 .hero_section {
     background: url("../../../Images/Vector.png");
@@ -28,7 +27,7 @@
             font-weight: 600;
             width: 80%;
             line-height: 70px;
-            font-family: $font-heading;
+            font-family: 'Sora', sans-serif;
             span{
                 color: #ee4a62;
             }

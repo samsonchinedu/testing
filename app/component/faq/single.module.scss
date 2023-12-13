@@ -1,5 +1,4 @@
 @import '../../../styles/abstract/mixing';
-@import '../../../styles/base/variable';
 
 .faq_section{
     max-width: 85%;
@@ -99,13 +98,13 @@
             position: relative;
 
             small{
-                font-family: $font-heading;
+                font-family: 'Sora', sans-serif;
             }
 
             h1{
                 font-size: 36px;
                 font-weight: 700;
-                font-family: $font-heading;
+                font-family: 'Sora', sans-serif;
                 line-height: 50px;
                 color: #ffffffe3;
                 margin-top: 1rem;
